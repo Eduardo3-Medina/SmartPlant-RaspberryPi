@@ -28,7 +28,7 @@ void loop() {
     float voltaje = lecturaTemp * (5.0 / 1023.0);
     float temperatura = (voltaje - 0.5) * 100.0; // Conversión a °C
 
-    // Enviar formato "temperatura,humedad" -> Ej: "26.8,45"
+    // Enviar formato "temperatura,humedad"
     Serial.print(temperatura, 1);
     Serial.print(",");
     Serial.println(humedad);
